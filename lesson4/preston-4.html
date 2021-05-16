@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Weather Me Not</title>
+    <meta name="description" content="Weather Me Not is a web based weather app that provides relative weather given historical data.">
+    <link rel="icon" type="image/svg" href="images/WMN-logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <script src='./js/main.js'></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./images/WMN-logo.png" alt="logo">
+          <h1>
+            Weather Me Not
+          </h1>
+          <img src="./images/WMN-slash.png" alt="slash" class="slash">
+          <span>Simplify the weather</span>
+        </div>
+        <div class="hamburger collapsed" onclick='collapseMenu()'>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul>
+          <li>
+            <a href="#">Home</a> 
+          </li>
+          <li>
+            <a href="preston-4.html">Preston</a> 
+          </li>
+          <li>
+            <a href="#">Soda Springs</a> 
+          </li>
+          <li>
+            <a href="#">Fish Haven</a> 
+          </li>
+          <li>
+            <a href="#">Storm Center</a> 
+          </li>
+          <li>
+            <a href="#">Gallery</a> 
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <h1>
+        Preston, ID
+      </h1>
+      <div class="hero">
+        <img src="./images/sunny.svg" alt="">
+        <div class="description">          
+          <h2>Sunny and warm!</h2>
+          <p>Today is going to be warmer than yesterday with little to no chance of rain</p>
+        </div>
+      </div>
+      <div class="five-forcast">
+        <h2>Next 5 days</h2>
+        <ul class="five-day">
+          <li data-day="0">
+            <h4>Tomorrow</h4>
+            <img src="./images/sunny.svg" alt="">
+            <p>
+              It's supposed to be sunny and warm!
+            </p>
+          </li>
+          <li data-day="1">
+            <h4>this day</h4>
+            <img src="./images/part-sunny.svg" alt="">
+            <p>
+              It's going to be like this
+            </p>
+          </li>
+          <li data-day="2">
+            <h4>this day</h4>
+            <img src="./images/rain.svg" alt="">
+            <p>
+              It's going to be like this
+            </p>
+          </li>
+          <li data-day="3">
+            <h4>this day</h4>
+            <img src="./images/snow.svg" alt="">
+            <p>
+              It's going to be like this
+            </p>
+          </li>
+          <li data-day="4">
+            <h4>this day</h4>
+            <img src="./images/thunder.svg" alt="">
+            <p>
+              It's going to be like this
+            </p>
+          </li>
+        </ul>
+        <div class="collapseButton">
+          <div class="drop">
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <h2>This is aour featured article! </h2>
+        <img src="./images/storm.jpg" alt="stormy placeholder">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis purus. 
+        </p>
+        <p>
+          Eros donec ac odio tempor orci. Mattis nunc sed blandit libero volutpat sed cras. Consectetur a erat nam at lectus. Habitant morbi tristique senectus et netus et malesuada. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium.
+        </p>
+        <p>
+          Et netus et malesuada fames ac turpis egestas integer. Consequat semper viverra nam libero justo laoreet sit. Nisl vel pretium lectus quam. Neque gravida in fermentum et. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Lectus urna duis convallis convallis tellus id interdum. Lectus vestibulum mattis ullamcorper velit sed ullamcorper. Nec ullamcorper sit amet risus nullam eget. Venenatis urna cursus eget nunc. Eget arcu dictum varius duis at. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu. Vel pretium lectus quam id leo in. Condimentum mattis pellentesque id nibh tortor.
+        </p>
+      </div>
+    </div>  
+    <footer>
+
+    </footer>
+  </body>
+</html>
