@@ -1,3 +1,11 @@
+function numToDay(num){
+  return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][num]
+}
+
+function numToMonth(num){
+  return ['January','February','March','April','May','June','July','August','September','November','December'][num]
+}
+
 function collapseMenu(){
     console.log('worked')
     let hamburger = document.querySelector('nav .hamburger'); 
@@ -13,9 +21,6 @@ function collapseMenu(){
   }
 
   function update5Day(){
-    function numToDay(num){
-      return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][num]
-    }
     let days = document.querySelectorAll('.five-day li'); 
     days.forEach(x => {x.firstElementChild.innerText = numToDay(x.getAttribute('data-day'))})
   }
@@ -37,8 +42,14 @@ function collapseMenu(){
     drops.forEach(x => x.parentElement.addEventListener('click', collapsePrevious))
   }
   
+  function updateDate(){
+    let date = new Date(); 
+    document.querySelector('.date').innerText = `${numToDay(date.getDay())}, ${date.getDate()} ${numToMonth(date.getMonth())} ${date.getFullYear()}`
+  }
+
   function init(){
     update5Day(); 
     addDropDowns();
+    updateDate();
   }
   window.addEventListener('DOMContentLoaded', init);

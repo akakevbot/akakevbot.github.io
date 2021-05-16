@@ -138,6 +138,10 @@ div.content {
   border-bottom: solid 0.35rem var(--dark-blue);
 }
 
+.content > *:last-child {
+  padding: 1rem;
+}
+
 .hero { 
   display: grid; 
   align-items: center;
@@ -211,6 +215,22 @@ div.content {
   float: left;
 }
 
+footer {
+  background-color: var(--dark-blue);
+  margin-top: -.35rem;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  font-size: .8rem;
+}
+
+footer * {
+  margin: 0;
+  padding: .25rem;
+}
+
 @media only screen and (min-width: 40rem) {
   nav img.slash {
     display:inline;
@@ -255,6 +275,9 @@ div.content {
 
   .collapseButton { 
     display: none; 
+  }
+  footer {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (min-width: 70rem) {
