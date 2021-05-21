@@ -184,7 +184,7 @@ main.content {
   bottom: 0;
   z-index: -1;
   content: '';
-  opacity: 0.2;
+  opacity: 0.35;
 }
 .hero > * {
   max-height: 35vh; 
