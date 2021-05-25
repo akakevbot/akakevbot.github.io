@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 64rem;
+}
+
+main > * {
+    margin: 0 2vw;
+    border: none; 
+}
+
+main > div {
+    margin-bottom: 2.5rem;
+}
+
+a { 
+    color: #fff; 
+}
+
+a:hover {
+    color:rgb(42, 112, 243)
+}
+
+#video, video {
+    max-width: 64rem; 
+    max-height: 36rem;
+    width: 96vw;
+    height: 54vw;
+    margin-bottom: 2.5rem;
+}
