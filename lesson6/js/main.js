@@ -1,3 +1,15 @@
+//load google font first
+WebFont.load({
+  google: {
+    families: [
+       'Bebas Neue',
+       'Poppins'
+    ]
+  }
+});
+
+
+
 //returns name of day from number from new Date()
 function numToDay(num){
   return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][num]
@@ -96,9 +108,20 @@ function addHamburgerFunction(){
   document.querySelector('.hamburger').addEventListener('click', collapseMenu)
 }
 
+function addWindChill(){
+  function windchill(temp, speed){
+    return Math.round(35.74 + (0.6215 * temp) - (35.75* Math.pow(speed,0.16)) + (0.4275* temp * Math.pow(speed,0.16)))
+  }
+  document.querySelector('.description .windchill').innerText = `${windchill(45,10)}`
+  
+}
+//windchill
+
+
 //function to initialize the page and assign functionality
 function init(){
   FridayBanner();
+  addWindChill()
   update5Day(); 
   addDropDowns();
   updateDate();

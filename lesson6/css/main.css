@@ -168,6 +168,10 @@ main.content {
   color: var(--light-blue); 
 }
 
+.preston-image {
+  padding-left: 0;
+  padding-right:0;
+}
 .hero { 
   display: grid; 
   align-items: center;

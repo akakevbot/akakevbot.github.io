@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src='./js/main.js'></script>
   </head>
   <body>
@@ -60,13 +61,21 @@
       <h1>
         Preston, ID
       </h1>
-      <picture class="background">
-        <source media="(max-width: 39rem)" srcset="./images/wdd230_background-small.jpg">
-        <source media="(max-width: 69rem)" srcset="./images/wdd230_background-medium.jpg">
-        <source media="(min-width: 70rem)" srcset="./images/wdd230_background-large.jpg">
-        <img src="./images/wdd230_background-small.jpg" alt="sunny preston">
-      </picture>
+      <div class="preston-image">
+        <picture>
+          <source media="(max-width: 39rem)" srcset="./images/wdd230_background-small.jpg">
+          <source media="(max-width: 69rem)" srcset="./images/wdd230_background-medium.jpg">
+          <source media="(min-width: 70rem)" srcset="./images/wdd230_background-large.jpg">
+          <img src="./images/wdd230_background-large.jpg" alt="sunny preston">
+        </picture>
+      </div>      
       <div class="hero">
+        <picture class="background">
+          <source media="(max-width: 39rem)" srcset="./images/sunny-sky-small.jpg">
+          <source media="(max-width: 69rem)" srcset="./images/sunny-sky-medium.jpg">
+          <source media="(min-width: 70rem)" srcset="./images/sunny-sky-large.jpg">
+          <img src="./images/sunny-sky-large.jpg" alt="sunny preston">
+        </picture>
         <img src="./images/sunny.svg" alt="">
         <div class="description">          
           <h2>Weather Summary</h2>
@@ -81,7 +90,7 @@
               Windspeed: <span class="windspeed">Loading...</span>
             </li>
             <li>
-              Windspeed: <span class="windspeed">Loading...</span>
+              Windchill: <span class="windchill">Loading...</span>
             </li>
           </ul>
         </div>
