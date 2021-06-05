@@ -6,6 +6,20 @@ function lazyLoadImgs(image){
     }
 }
 
-lazyImgs.forEach((img) => {
-    lazyLoadImgs(img);
-  });
+if('IntersectionObserver' in window) {
+    let observer = new IntersectionObserver(function(items, observer){
+        items.forEach(function(item){
+            if(item.isIntersecting){
+                lazyLoadImgs(item.target); 
+                observer.unobserve(item.target)
+            }
+        })
+    })
+    lazyImgs.forEach((img) => {
+        observer.observe(img);
+    });
+} else {
+    lazyImgs.forEach((img) => {
+        lazyLoadImgs(img);
+    });
+}
