@@ -71,7 +71,7 @@ function updateDate(){
 //checks if banner should be displayed
 function FridayBanner(){
   //checks if day is friday using numToDay for readability
-  if (numToDay(new Date().getDay()) == 'Friday'){
+  if (numToDay(new Date().getDay()) == 'Friday' || /gallery/.test(location.href)){
     //assigns expected display
     document.querySelector('.banner').style.display = 'flex'
   }
@@ -112,7 +112,9 @@ function addWindChill(){
   function windchill(temp, speed){
     return Math.round(35.74 + (0.6215 * temp) - (35.75* Math.pow(speed,0.16)) + (0.4275* temp * Math.pow(speed,0.16)))
   }
-  document.querySelector('.description .windchill').innerText = `${windchill(45,10)}`
+  if (document.querySelector('.description .windchill')){
+    document.querySelector('.description .windchill').innerText = `${windchill(document.querySelector('.description .temp').innerText,document.querySelector('.description .windspeed').innerText)}`
+  } 
   
 }
 //windchill
