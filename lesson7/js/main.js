@@ -71,7 +71,7 @@ function updateDate(){
 //checks if banner should be displayed
 function FridayBanner(){
   //checks if day is friday using numToDay for readability
-  if (numToDay(new Date().getDay()) == 'Friday' || /gallery/.test(location.href)){
+  if (numToDay(new Date().getDay()) == 'Friday'){
     //assigns expected display
     document.querySelector('.banner').style.display = 'flex'
   }

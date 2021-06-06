@@ -149,7 +149,7 @@ main.content {
   padding: 1rem 0;
 }
 
-.banner {
+.banner, .welcome-banner {
   display: flex; 
   align-items: center;
   justify-content: center;
@@ -157,13 +157,16 @@ main.content {
   background-color: var(--dark-blue);
   display: none;
 }
+.welcome-banner {
+  display: flex; 
+}
 
-.banner > * { 
+.banner > * , .welcome-banner > *{ 
   padding: 1rem;
   border-left: solid 0.35rem var(--light-blue);
   margin: 0;
 }
-.banner > *:first-child { 
+.banner > *:first-child,  .welcome-banner > *:first-child{ 
   border-width: 0; 
   color: var(--light-blue); 
 }

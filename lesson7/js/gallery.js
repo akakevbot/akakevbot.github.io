@@ -30,7 +30,9 @@ function getUnixDays(){
 
 //insert days since last gallery visit
 if (localStorage.getItem('last_gallery_visit')){
-    document.querySelector('.banner .days-since').innerText =  getUnixDays()- localStorage.getItem('last_gallery_visit') 
+    document.querySelector('.welcome-banner .days-since').innerText =  getUnixDays()- localStorage.getItem('last_gallery_visit') 
+}else {
+    document.querySelector('.welcome-banner p').innerText =  `Enjoy your visit to the gallery!`
 }
 
 localStorage.setItem('last_gallery_visit', getUnixDays())
