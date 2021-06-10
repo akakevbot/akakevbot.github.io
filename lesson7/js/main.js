@@ -1,12 +1,12 @@
 //load google font first
-// WebFont.load({
-//   google: {
-//     families: [
-//        'Bebas Neue',
-//        'Poppins'
-//     ]
-//   }
-// });
+WebFont.load({
+  google: {
+    families: [
+       'Bebas Neue',
+       'Poppins'
+    ]
+  }
+});
 
 
 
