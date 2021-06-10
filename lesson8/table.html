@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load</title>
+    <meta name="description" content="Lazy load js assignment">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/table.css"
+    ><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <script src='./js/lazyload.js' defer></script>
+    <style>
+        main {
+            display: flex; 
+            min-height: 100vh; 
+            justify-content: center;
+            align-items: center;
+            font-family: 'Ubuntu', sans-serif;;
+        }
+        table { 
+            border-collapse: collapse; 
+            margin-top: -10rem;
+            width: 40rem; 
+            max-width: 90%; 
+            text-align: center;
+            
+            box-shadow: 0.25rem 0.25rem 1rem #628ca6;
+        }
+        table td{
+            border: .1rem solid #e6e6e6; 
+            margin: 0; 
+            padding: .5rem;
+        }
+        table thead tr:first-child {
+            background-color: #e7f0ed;
+            background-color: #628ca6;
+            background-color: #7fb9c2;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+        table thead tr:last-child {
+            background-color: #e7f0ed;
+            background-color: #628ca6;
+            color: #fff;
+            font-weight: 800;
+        }
+        table tbody tr {
+            background-color: #e7f0ed;
+        }
+        table tbody tr:nth-child(even) {
+            background-color: #e7ffed;
+        }
+        table tbody tr:nth-child(4) td:last-child{
+            background-color: #628ca6;
+            color: #fff;
+        }
+        table tfoot * {
+            background-color: #7fb9c2;
+        }
+
+    </style>
+  </head>
+  <body>
+      <main>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="3">
+                        ACME Wildwest
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Period
+                    </td>
+                    <td>
+                        Sales
+                    </td>
+                    <td>
+                        Sales Goal
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Auguset
+                    </td>
+                    <td>
+                        $3,590
+                    </td>
+                    <td>
+                        $4,000
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        September
+                    </td>
+                    <td>
+                        $4,420
+                    </td>
+                    <td>
+                        $5,000
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Octboer
+                    </td>
+                    <td>
+                        $4,870
+                    </td>
+                    <td>
+                       $5,000
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        November
+                    </td>
+                    <td>
+                        $8,610
+                    </td>
+                    <td>
+                       $7,500
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <em>Balck Friday</em>
+                    </td>
+                    <td colspan="2">
+                        $3,200
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        December
+                    </td>
+                    <td>
+                        $6,820
+                    </td>
+                    <td>
+                       $7,500
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        Compiled 06.10.2021 by JWilding
+                    </td>
+                </tr>
+            </tfoot>
+        </table>   
+      </main>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston | Weather Me Not</title>
+    <meta name="description" content="Weather for Preston ID">
+    <link rel="icon" type="image/svg" href="images/WMN-logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src='./js/main.js'></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./images/WMN-logo.png" alt="logo">
+          <h1>
+            Weather Me Not
+          </h1>
+          <img src="./images/WMN-slash.png" alt="slash" class="slash">
+          <span>Weather. Simplified.</span>
+        </div>
+        <div class="hamburger collapsed">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul>
+          <li>
+            <a href="#">Home</a> 
+          </li>
+          <li>
+            <a class="active" href="preston-7.html">Preston</a> 
+          </li>
+          <li>
+            <a href="#">Soda Springs</a> 
+          </li>
+          <li>
+            <a href="#">Fish Haven</a> 
+          </li>
+          <li>
+            <a href="#">Storm Center</a> 
+          </li>
+          <li>
+            <a href="gallery-7.html">Gallery</a> 
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="banner">
+       <h1>Satruday</h1>
+       <p>
+          Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion.
+        </p> 
+      </div>
+      <h1>
+        Preston, ID
+      </h1>  
+      <div class="hero">
+        <picture class="background">
+          <source media="(max-width: 39rem)" srcset="./images/sunny-sky-small.jpg">
+          <source media="(max-width: 69rem)" srcset="./images/sunny-sky-medium.jpg">
+          <source media="(min-width: 70rem)" srcset="./images/sunny-sky-large.jpg">
+          <img src="./images/sunny-sky-large.jpg" alt="sunny preston">
+        </picture>
+        <img src="./images/sunny.svg" alt="">
+        <div class="description">          
+          <h2>Weather Summary</h2>
+          <ul>
+            <li>
+              Temperature: <span class="temp" value='45'>45</span>°
+            </li>
+            <li>
+              Humidity: <span class="humidity">Loading...</span>
+            </li>
+            <li>
+              Windspeed: <span class="windspeed" value="10">10</span>mph
+            </li>
+            <li>
+              Windchill: <span class="windchill">Loading...</span>°
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="five-forcast">
+        <h2>Next 5 days</h2>
+        <ul class="five-day">
+          <li data-day="0">
+            <h4>Tomorrow</h4>
+            <img src="./images/sunny.svg" alt="">
+            <p>
+              It's supposed to be sunny and warm!
+            </p>
+          </li>
+          <li data-day="1">
+            <h4>this day</h4>
+            <img src="./images/part-sunny.svg" alt="">
+            <p>
+              It's going to be like this
+            </p>
+          </li>
+          <li data-day="2">
+            <h4>this day</h4>
+            <img src="./images/rain.svg" alt="">
+            <p>
+              It's going to be like this
+            </p>
+          </li>
+          <li data-day="3">
+            <h4>this day</h4>
+            <img src="./images/snow.svg" alt="">
+            <p>
+              It's going to be like this
+            </p>
+          </li>
+          <li data-day="4">
+            <h4>this day</h4>
+            <img src="./images/thunder.svg" alt="">
+            <p>
+              It's going to be like this
+            </p>
+          </li>
+        </ul>
+        <div class="collapseButton">
+          <div class="drop">
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <h2>This is our featured article! </h2>
+        <img src="./images/storm.jpg" alt="stormy placeholder">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis purus. 
+        </p>
+        <p>
+          Eros donec ac odio tempor orci. Mattis nunc sed blandit libero volutpat sed cras. Consectetur a erat nam at lectus. Habitant morbi tristique senectus et netus et malesuada. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium.
+        </p>
+        <p>
+          Et netus et malesuada fames ac turpis egestas integer. Consequat semper viverra nam libero justo laoreet sit. Nisl vel pretium lectus quam. Neque gravida in fermentum et. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Lectus urna duis convallis convallis tellus id interdum. Lectus vestibulum mattis ullamcorper velit sed ullamcorper. Nec ullamcorper sit amet risus nullam eget. Venenatis urna cursus eget nunc. Eget arcu dictum varius duis at. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu. Vel pretium lectus quam id leo in. Condimentum mattis pellentesque id nibh tortor.
+        </p>
+      </div>
+      <footer>
+        <div class="contact">
+          <p>Phone: 435.123.4567</p>
+          <p>email: contact@weathermenot.com</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1621917355936!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div>
+          <span class="date">Today's date</span>
+          <div class="social">
+            <a href="#"><img src="./images/twitter.svg" alt="twitter"></a>         
+            <a href="#"><img src="./images/facebook_logo.png" alt="facebook"> </a>
+            <a href="#"><img src="./images/pinterest.svg" alt="pinterest"> </a>
+          </div>
+        </div>
+      </footer>
+    </main>  
+  </body>
+</html>
