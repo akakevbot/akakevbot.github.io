@@ -132,8 +132,8 @@ function init(){
   addDropDowns();
   updateDate();
   addHamburgerFunction();
+  loadGoogleMaps()
 }
 
 //wait for content to load before initializing page.
 window.addEventListener('DOMContentLoaded', init);
-window.addEventListener('load', loadGoogleMaps());
