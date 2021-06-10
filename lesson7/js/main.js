@@ -136,4 +136,4 @@ function init(){
 
 //wait for content to load before initializing page.
 window.addEventListener('DOMContentLoaded', init);
-window.addEventListener('load', loadGoogleMaps());
+//window.addEventListener('load', loadGoogleMaps());
