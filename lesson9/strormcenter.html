@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston | Weather Me Not</title>
+    <meta name="description" content="Weather for Preston ID">
+    <link rel="icon" type="image/svg" href="images/WMN-logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src='./js/main.js'></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./images/WMN-logo.png" alt="logo">
+          <h1>
+            Weather Me Not
+          </h1>
+          <img src="./images/WMN-slash.png" alt="slash" class="slash">
+          <span>Weather. Simplified.</span>
+        </div>
+        <div class="hamburger collapsed">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul>
+          <li>
+            <a href="#">Home</a> 
+          </li>
+          <li>
+            <a href="preston-8.html">Preston</a> 
+          </li>
+          <li>
+            <a href="#">Soda Springs</a> 
+          </li>
+          <li>
+            <a href="#">Fish Haven</a> 
+          </li>
+          <li>
+            <a class="active" href="#">Storm Center</a> 
+          </li>
+          <li>
+            <a href="gallery-8.html">Gallery</a> 
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <div>
+        <h1>Storm Center</h1>
+        <p>Use this page to report storms</p>
+      </div>
+      <div>
+        <form action="thanks.html">
+          <label for="full_name">
+            Full Name
+          </label> 
+          <input type="text" name="full_name" pattern="[A-Za-z]+? [A-Za-z]+?" title="Please include first and last name" required>
+          <label for="email">
+            Email
+          </label>
+          <input type="email" name="email">
+          <label for="phone">
+            Phone 
+          </label>
+          <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{7}" required title="Please enter a valid telephone number">
+          <label for="zip">
+            Zip code
+          </label>
+          <input type="text" name="zip" required pattern="[0-9]{5}">
+          <label for="date">
+            Date
+          </label>
+          <input type="date" name="date">
+          <label for="type">
+            Storm Type
+          </label>
+          <input list="types" name="type">
+          <datalist id='types'>
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+          </datalist>
+          <label for="severity">
+            Severity
+          </label>
+          <input type="number" name="severity" min="1" max="10">
+          <label for="region">
+            Region
+          </label>
+          <select name="region">
+            <option value="soda_springs">Soda Springs</option>
+            <option value="preston">Preston</option>
+            <option value="fish_haven">Fish Haven</option>
+          </select>
+          <div>
+            Dangerous?
+          </div>
+          <div>
+            <input type="radio" name="dangerous" value="yes" id='dangerous_yes' >
+            <label for="dangerous_yes">Yes</label><br>
+            <input type="radio" name="dangerous" value="maybe" id='dangerous_maybe'>
+            <label for="dangerous_maybe">Maybe</label><br>
+            <input type="radio" name="dangerous" value="no" id='dangerous_no'>
+            <label for="dangerous_no">No</label>
+          </div>
+          <label for="comments">
+            Comments
+          </label>
+         <textarea name="comments" cols="30" rows="10"></textarea>
+          <input type="submit">
+
+        </form>
+      </div>
+      <footer>
+        <div class="contact">
+          <p>Phone: 435.123.4567</p>
+          <p>email: contact@weathermenot.com</p>
+          <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div>
+          <span class="date">Today's date</span>
+          <div class="social">
+            <a href="#"><img src="./images/twitter.svg" alt="twitter"></a>         
+            <a href="#"><img src="./images/facebook_logo.png" alt="facebook"> </a>
+            <a href="#"><img src="./images/pinterest.svg" alt="pinterest"> </a>
+          </div>
+        </div>
+      </footer>
+    </main>  
+  </body>
+</html>

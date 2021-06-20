@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Weather Me Not</title>
+    <meta name="description" content="Gallery of Weather images">
+    <link rel="icon" type="image/svg" href="images/WMN-logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./images/WMN-logo.png" alt="logo">
+          <h1>
+            Weather Me Not
+          </h1>
+          <img src="./images/WMN-slash.png" alt="slash" class="slash">
+          <span>Weather. Simplified.</span>
+        </div>
+        <div class="hamburger collapsed">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul>
+          <li>
+            <a href="#">Home</a> 
+          </li>
+          <li>
+            <a href="preston-7.html">Preston</a> 
+          </li>
+          <li>
+            <a href="#">Soda Springs</a> 
+          </li>
+          <li>
+            <a href="#">Fish Haven</a> 
+          </li>
+          <li>
+            <a href="#">Storm Center</a> 
+          </li>
+          <li>
+            <a class="active" href="#">Gallery</a> 
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">        
+      <div class="welcome-banner">
+        <h1>Welcome!</h1>
+        <p>
+           It has been <span class="days-since">0</span> days<br> since you last visited the gallery. 
+         </p> 
+       </div>
+      <div class="gallery">
+        <div>
+          <picture>
+            <source media="(max-width: 39rem)" srcset="./images/fields-placeholder.jpg" data-src="./images/fields-small.jpg">
+            <source media="(max-width: 69rem)" srcset="./images/fields-placeholder.jpg" data-src="./images/fields-medium.jpg">
+            <source media="(min-width: 70rem)" srcset="./images/fields-placeholder.jpg" data-src="./images/fields-large.jpg">
+            <img src="./images/placeholder.jpg" alt="sunny-fields">
+          </picture>
+          <div class="description">Fields basking in the rays of the sun</div>
+        </div>
+        <div>
+          <picture>
+            <source media="(max-width: 39rem)" srcset="./images/tree-sky-placeholder.jpg" data-src="./images/tree-sky-small.jpg">
+            <source media="(max-width: 69rem)" srcset="./images/tree-sky-placeholder.jpg" data-src="./images/tree-sky-medium.jpg">
+            <source media="(min-width: 70rem)" srcset="./images/tree-sky-placeholder.jpg" data-src="./images/tree-sky-large.jpg">
+            <img src="./images/placeholder.jpg" alt="tree in a storm">
+          </picture>
+          <div class="description">A lone tree wheathers a large storm</div>
+        </div>
+        <div>
+          <picture>
+            <source media="(max-width: 39rem)" srcset="./images/rainy-fields-placeholder.jpg" data-src="./images/rainy-fields-small.jpg">
+            <source media="(max-width: 69rem)" srcset="./images/rainy-fields-placeholder.jpg" data-src="./images/rainy-fields-medium.jpg">
+            <source media="(min-width: 70rem)" srcset="./images/rainy-fields-placeholder.jpg" data-src="./images/rainy-fields-large.jpg">
+            <img src="./images/placeholder.jpg" alt="fields in the rain">
+          </picture>
+          <div class="description">Rains fall as the sunsets on a mountain meadow</div>
+        </div>
+        <div>
+          <picture>
+            <source media="(max-width: 39rem)" srcset="./images/lago-placeholder.jpg" data-src="./images/lago-small.jpg">
+            <source media="(max-width: 69rem)" srcset="./images/lago-placeholder.jpg" data-src="./images/lago-medium.jpg">
+            <source media="(min-width: 70rem)" srcset="./images/lago-placeholder.jpg" data-src="./images/lago-large.jpg">
+            <img src="./images/placeholder.jpg" alt="lago sunset">
+          </picture>
+          <div class="description">An orange sunset over a secluded lake</div>
+        </div>
+        <div>
+          <picture>
+            <source media="(max-width: 39rem)" srcset="./images/nature-road-placeholder.jpg" data-src="./images/nature-road-small.jpg">
+            <source media="(max-width: 69rem)" srcset="./images/nature-road-placeholder.jpg" data-src="./images/nature-road-medium.jpg">
+            <source media="(min-width: 70rem)" srcset="./images/nature-road-placeholder.jpg" data-src="./images/nature-road-large.jpg">
+            <img src="./images/placeholder.jpg" alt="old dirt road">
+          </picture>
+          <div class="description">Gloomy louds roll over an old dirt road</div>
+        </div>
+        <div>
+          <picture>
+            <source media="(max-width: 39rem)" srcset="./images/snow-tree-placeholder.jpg" data-src="./images/snow-tree-small.jpg">
+            <source media="(max-width: 69rem)" srcset="./images/snow-tree-placeholder.jpg" data-src="./images/snow-tree-medium.jpg">
+            <source media="(min-width: 70rem)" srcset="./images/snow-tree-placeholder.jpg" data-src="./images/snow-tree-large.jpg">
+            <img src="./images/placeholder.jpg" alt="snow covered tree">
+          </picture>
+          <div class="description">Sleet falls on an already snow-covered terrain</div>
+        </div>
+      </div>
+      <footer>
+        <div class="contact">
+          <p>Phone: 435.123.4567</p>
+          <p>email: contact@weathermenot.com</p>
+          <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div>
+          <span class="date">Today's date</span>
+          <div class="social">
+            <a href="#"><img src="./images/twitter.svg" alt="twitter"></a>         
+            <a href="#"><img src="./images/facebook_logo.png" alt="facebook"> </a>
+            <a href="#"><img src="./images/pinterest.svg" alt="pinterest"> </a>
+          </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src='./js/main.js'></script>
+        <script src='./js/gallery.js'></script>
+      </footer>
+    </main>  
+  </body>
+</html>
