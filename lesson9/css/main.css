@@ -22,6 +22,10 @@ h4, h5, h6{
   color: var(--dark-blue);
   border-bottom: solid 0.25rem var(--blue-green);
 }
+
+.wireframe {
+  max-width: 55rem;
+}
 header {
   position: fixed; 
   width: 100%; 
@@ -125,6 +129,11 @@ nav span {
   height: .25rem; 
   width: 2.5rem;
   background-color: var(--dark-blue);
+}
+
+img.homepage-hero {
+  padding:0;
+  
 }
 
 main.content {

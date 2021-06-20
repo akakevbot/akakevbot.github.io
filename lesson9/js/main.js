@@ -133,6 +133,13 @@ function loadGoogleMaps(){
   }
 }
 
+function addHomeOptions(){
+  fetch("https://byui-cit230.github.io/weather/data/towndata.json")
+  .then(function (response) {
+    console.log(response.json());
+  })
+}
+
 
 //function to initialize the page and assign functionality
 function init(){
@@ -142,7 +149,8 @@ function init(){
   addDropDowns();
   updateDate();
   addHamburgerFunction();
-  loadGoogleMaps()
+  loadGoogleMaps();
+  addHomeOptions();
 }
 
 //wait for content to load before initializing page.
