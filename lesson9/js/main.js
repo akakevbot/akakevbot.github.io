@@ -134,10 +134,51 @@ function loadGoogleMaps(){
 }
 
 function addHomeOptions(){
+  function addTown(town){
+    let townContainer = document.createElement('div');
+    let data = document.createElement('div');
+    let title = document.createElement('h3'); 
+    let motto = document.createElement('div'); 
+    let year = document.createElement('div');
+    let population = document.createElement('div'); 
+    let rain = document.createElement('div'); 
+    let img = document.createElement('img')
+
+    title.innerText = town.name; 
+    motto.innerText = `"${town.motto}"`; 
+    motto.classList.add('motto'); 
+    year.innerText = `Founded: ${town.yearFounded}`; 
+    population.innerText = `Population: ${JSON.stringify(town.currentPopulation).split( /(?=(?:\d{3})+(?:\.|$))/g ).join( "," )}`;
+    rain.innerText = `Rainfall: ${town.averageRainfall}`; 
+
+    img.setAttribute('src', `./images/${town.photo}`)
+    img.setAttribute('alt', `A photo of the town of ${town.name}`)
+
+    townContainer.appendChild(img);
+    townContainer.classList.add('town'); 
+    data.appendChild(title);
+    data.appendChild(motto);
+    data.appendChild(year);
+    data.appendChild(population);
+    data.appendChild(rain);
+    townContainer.appendChild(data);
+    
+
+    document.querySelector('.towns').appendChild(townContainer);
+  }
+
   fetch("https://byui-cit230.github.io/weather/data/towndata.json")
-  .then(function (response) {
-    console.log(response.json());
+  .then(response => {
+    return response.json()
   })
+  .then(
+    response => {
+      towns = response.towns.filter(town => {
+        return town.name == 'Preston' || town.name == 'Fish Haven' || town.name == 'Soda Springs'
+      })
+      towns.forEach(x => addTown(x))
+    }
+  )
 }
 
 

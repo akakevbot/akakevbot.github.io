@@ -248,6 +248,29 @@ main.content {
   max-width: none;
 }
 
+.towns {
+  display: grid; 
+}
+.towns > .town {
+  background-color: #eee; 
+  margin-bottom: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.motto {
+  font-style: italic;
+}
+
+.town >div  div, .town h3 {
+  margin: .5rem 1rem;
+}
+
+.town img {
+  object-fit: cover;
+  height: 20rem;
+  width: 100%; 
+}
+
 .five-day { 
   display: grid;
   max-height: 10rem; 
@@ -392,9 +415,23 @@ input:focus, select:focus, textarea:focus {
   .hero > * {
     max-height: 25rem; 
   }
-  .hero > .background {
-  }
   
+  .towns > .town { 
+    display:flex;
+    height: 20rem;
+    padding-bottom:0;
+  }
+
+  .towns > .town:nth-child(even) { 
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .town > img {
+    width: 65vw; 
+    max-width: 65%;
+  }
+
   .five-day { 
     display: grid; 
     grid-template-columns: repeat(5, 1fr);
@@ -445,6 +482,22 @@ input:focus, select:focus, textarea:focus {
   }
   nav ul li{
     padding: .5rem 1rem; 
+  }
+
+  .towns {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .towns > .town { 
+    display:block;
+    height: auto;
+    margin: 0 1rem;
+  }
+
+
+  .town > img {
+    width: 65vw; 
+    max-width: 100%;
   }
 
   .gallery {
