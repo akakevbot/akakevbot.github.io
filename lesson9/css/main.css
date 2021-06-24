@@ -420,6 +420,7 @@ input:focus, select:focus, textarea:focus {
     display:flex;
     height: 20rem;
     padding-bottom:0;
+    align-items: center;
   }
 
   .towns > .town:nth-child(even) { 
