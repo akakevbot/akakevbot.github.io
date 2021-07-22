@@ -313,6 +313,9 @@
     align-items: center;
     z-index: -2;
   }
+  .homepage-hero.city {
+    background-image: url("../images/Police.jpg");
+  }
 
   .homepage-hero > * {
     margin: 0;

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Puyallup </title>
+    <meta name="description" content="Contact the Puyallup Chamber of Commerce">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src='./js/main.js'></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+        </div>
+        <div class="hamburger collapsed">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html">Home</a> 
+          </li>
+          <li>
+            <a href="city.html">City</a> 
+          </li>
+          <li>
+            <a href="join.html" >Join</a> 
+          </li>
+          <li>
+            <a href="#">Directory</a> 
+          </li>
+          <li>
+            <a class="active" href="contact.html" >Contact</a> 
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <div>
+        <h1>Join today!</h1>
+        <p>Join to get all the benefits needed to operate your business in Puyallup!</p>
+      </div>
+        <form action="thanks.html">
+          <label for="first_name">
+            First Name
+          </label> 
+          <span>
+            <input type="text" name="first_name" pattern="[A-Za-z]+" title="Please include first and last name" required>
+          </span>
+          <label for="last_name">
+            Last Name
+          </label> 
+          <span>
+            <input type="text" name="last_name" pattern="[A-Za-z]+" title="Please include first and last name" required>
+          </span>
+          <label for="title">
+            Title
+          </label> 
+          <span>
+            <input type="text" name="title">
+          </span>
+          <label for="email">
+            Email
+          </label>
+          <span><input type="email" name="email" pattern=".+@.+\..+" required title="Please enter a valid email address" required></span>
+          <label for="phone">
+            Cell phone 
+          </label>
+          <span><input type="text" name="phone" pattern="[A-Za-z]+" title="Please include first and last name" required></span>
+          <label for="business">
+            Business name
+          </label> 
+          <span>
+            <input type="text" name="business" required>
+          </span>
+          <label for="business_address">
+            Business address
+          </label> 
+          <span>
+            <input type="text" name="business_address" >
+          </span>
+          <label for="business_website">
+            Business website
+          </label> 
+          <span>
+            <input type="text" name="business_website" >
+          </span>
+          <div>
+            Business Tier
+          </div>
+          <div>
+            <input type="radio" name="dangerous" value="yes" id='dangerous_yes' >
+            <label for="non-profit">Non-profit ($100)</label><br>
+            <input type="radio" name="dangerous" value="maybe" id='dangerous_maybe'>
+            <label for="bronze">Bronze ($200)</label><br>
+            <input type="radio" name="dangerous" value="no" id='dangerous_no'>
+            <label for="silver"> Silver ($400)</label>
+            <input type="radio" name="dangerous" value="no" id='dangerous_no'>
+            <label for="gold">Gold ($1000)</label>
+          </div>
+          <label for="business_descr">
+            Business Descrition
+          </label>
+         <textarea name="business_descr" cols="30" rows="10"></textarea>
+          <input class="button" type="submit">
+
+        </form>
+        <footer>
+          <div class="contact">
+            <div>
+              323 N. Meridian, Ste A
+              Puyallup, WA, 98371
+            </div>
+            <div>
+              253.845.6755 
+            </div>
+          </div>
+          <div class="social">
+            <a href="#"><img src="./images/twitter.svg" alt="twitter"></a>         
+            <a href="#"><img src="./images/facebook_logo.png" alt="facebook"> </a>
+            <a href="#"><img src="./images/pinterest.svg" alt="pinterest"> </a>
+          </div>
+        </footer>
+    </main>  
+  </body>
+</html>
