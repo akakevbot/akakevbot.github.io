@@ -93,7 +93,7 @@
     border-radius: .25rem;
   }
 
-  .button:after {
+  .button::after {
     content: ' ';
     background-color: #A8DADC;    
     transition: all .5s;
@@ -108,7 +108,7 @@
     border: 1px solid #fff;
   }
 
-  .button:hover:after {
+  .button:hover::after {
     width: 110%;
   }
 
@@ -116,8 +116,6 @@
     text-decoration: none; 
     font-weight: bold;
     color: var(--dark-blue);
-  }
-  a:hover { 
   }
   a:visited { 
     color: inherit;
@@ -175,37 +173,9 @@
   nav ul li:first-child{
     padding-top: 20px; 
   }
-  nav ul a {
-  }
-  nav ul a.active {
-  }
-  nav ul a.active:hover {
-  }
-  nav .logo {
-    display: flex; 
-    align-items: center;
-  }
-  nav .logo h1 {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    margin: .2rem 0 0 0; 
-  }
-  nav .logo span {  
-    margin: .2rem 0 0 0; 
-  }
-  nav img {
-    height: 2.5rem; 
-    border-radius: 4px;
-    margin: 0 1.5rem 0 0;
-    padding: 0;
-  }
-  nav img.slash {
-    transform: rotate(45deg);
-    margin: 0 .1rem;
-    display: none
-  }
-  nav span {
-    display: none; 
+
+  nav .active::after {
+    background-color: #E63946;
   }
   .hamburger{ 
     display: flex; 
