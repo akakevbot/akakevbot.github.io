@@ -379,3 +379,8 @@
   .social img {
     height: 2rem;
   }
+
+  iframe {
+    width: 100%; 
+    height: 25vh;
+  }

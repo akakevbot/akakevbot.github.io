@@ -42,74 +42,42 @@
     </header>
     <main class="content">
       <div>
-        <h1>Join today!</h1>
-        <p>Join to get all the benefits needed to operate your business in Puyallup!</p>
+        <h1>Contact us! </h1>
+        <p>Feel free to reach out to us and let us know if you have questions! </p>
+        <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="googleMap"></iframe>
+        <br>
+        <div>
+          323 N. Meridian, Ste A
+          Puyallup, WA, 98371
+        </div>
+        <div>
+          253.845.6755 
+        </div>
       </div>
+      <div>
+        <h2>Send us an email! </h2>
         <form action="thanks.html">
-          <label for="first_name">
-            First Name
+
+          <label for="full_name">
+            Full Name
           </label> 
-          <span>
-            <input type="text" name="first_name" pattern="[A-Za-z]+" title="Please include first and last name" required>
-          </span>
-          <label for="last_name">
-            Last Name
-          </label> 
-          <span>
-            <input type="text" name="last_name" pattern="[A-Za-z]+" title="Please include first and last name" required>
-          </span>
-          <label for="title">
-            Title
-          </label> 
-          <span>
-            <input type="text" name="title">
-          </span>
+          <span><input type="text" name="full_name" pattern="[A-Za-z]+? [A-Za-z]+?" title="Please include first and last name" required></span>
           <label for="email">
             Email
           </label>
-          <span><input type="email" name="email" pattern=".+@.+\..+" required title="Please enter a valid email address" required></span>
+          <span><input type="email" name="email" pattern=".+@.+\..+" required title="Please enter a valid email address" ></span>
           <label for="phone">
-            Cell phone 
+            Phone 
           </label>
-          <span><input type="text" name="phone" pattern="[A-Za-z]+" title="Please include first and last name" required></span>
-          <label for="business">
-            Business name
-          </label> 
-          <span>
-            <input type="text" name="business" required>
-          </span>
-          <label for="business_address">
-            Business address
-          </label> 
-          <span>
-            <input type="text" name="business_address" >
-          </span>
-          <label for="business_website">
-            Business website
-          </label> 
-          <span>
-            <input type="text" name="business_website" >
-          </span>
-          <div>
-            Business Tier
-          </div>
-          <div>
-            <input type="radio" name="dangerous" value="yes" id='dangerous_yes' >
-            <label for="non-profit">Non-profit ($100)</label><br>
-            <input type="radio" name="dangerous" value="maybe" id='dangerous_maybe'>
-            <label for="bronze">Bronze ($200)</label><br>
-            <input type="radio" name="dangerous" value="no" id='dangerous_no'>
-            <label for="silver"> Silver ($400)</label>
-            <input type="radio" name="dangerous" value="no" id='dangerous_no'>
-            <label for="gold">Gold ($1000)</label>
-          </div>
-          <label for="business_descr">
+          <span><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{7}" required title="Please enter a valid telephone number"></span>
+          <label for="message">
             Business Descrition
           </label>
-         <textarea name="business_descr" cols="30" rows="10"></textarea>
+         <textarea name="message" cols="30" rows="10"></textarea>
           <input class="button" type="submit">
 
         </form>
+      </div>
         <footer>
           <div class="contact">
             <div>

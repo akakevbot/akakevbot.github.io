@@ -30,8 +30,23 @@ function addHamburgerFunction(){
     document.querySelector('.hamburger').addEventListener('click', collapseMenu)
   }
 
+  function loadGoogleMaps(){
+    if('IntersectionObserver' in window && document.querySelector('iframe.googleMap')) {
+      let observer = new IntersectionObserver(function(iframeEl, observer){
+          if(iframeEl[0].isIntersecting && document.querySelector('iframe.googleMap').getAttribute('src')==''){
+            document.querySelector('iframe.googleMap').setAttribute('src', "https://maps.google.com/maps?q=puyallup&t=&z=13&ie=UTF8&iwloc=&output=embed")
+          }
+        })
+      observer.observe(document.querySelector('iframe.googleMap'));
+  
+    } else {
+      document.querySelector('iframe.googleMap').setAttribute('src', "https://maps.google.com/maps?q=puyallup&t=&z=13&ie=UTF8&iwloc=&output=embed")
+    }
+  }
+
   function init(){
     addHamburgerFunction()
+    loadGoogleMaps()
   }
 
   window.addEventListener('DOMContentLoaded', init)
